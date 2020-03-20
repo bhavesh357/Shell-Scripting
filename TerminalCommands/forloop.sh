@@ -9,7 +9,7 @@ do
       rm -R $folderName;
   fi
   #echo "creating folder ${folderName}";
-  mkdir folderName;
+  mkdir $folderName;
   #echo copying ${file} to ${folderName};
   cp $file $folderName;
 done
