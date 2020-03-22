@@ -9,11 +9,11 @@ do
 	coin=$(( $RANDOM % 2))
 	if [ $coin -eq 1 ]
 	then
-		echo head
+		((heads++))
 	else
-		echo tail
+		((tails++))
 	fi
 done
 
-echo $heads
-echo $tails
+echo heads = $heads
+echo tails = $tails
